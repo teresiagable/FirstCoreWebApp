@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewData["Title"] = "MathTable";
+    //ViewBag.Title="MathTable";
+}
+
+<h1>MathTable</h1>
+
+<table border="1">
+    @for (int y = 1; y <= 10; y++)
+    {
+        <tr border="1">
+            @for (int x = 1; x <= 10; x++)
+            {
+
+                <td width="10">@(y * x)</td>
+            }
+        </tr>
+    }
+</table>
+
