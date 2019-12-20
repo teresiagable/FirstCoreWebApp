@@ -12,7 +12,11 @@ namespace FirstCoreWebApp.Models
         public int Id { get; set; }
         public string Brand { get; set; }
         public string ModelName { get; set; }
-        public int MyProperty { get; set; }
+
+        public Car()
+        {
+            Id = ++idCounter;
+        }
 
     }
 }
